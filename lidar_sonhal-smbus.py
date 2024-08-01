@@ -14,7 +14,7 @@ def send_data_to_arduino(data):
     bus.write_byte(address, data)
     print("raspberry pi sent: ", data)
 
-lidar = RPLidar('COM10', 256000, 5, None)
+lidar = RPLidar('/dev/ttyUSB0', 256000, 5, None)
 scan_data = []
 data_lock = threading.Lock()
 
