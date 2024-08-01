@@ -1,0 +1,5 @@
+smbus
+aiohttp
+rplidar
+
+# pip install -r requirements.txt
